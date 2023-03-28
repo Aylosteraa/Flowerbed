@@ -1,0 +1,140 @@
+/* Header part starts */
+.header__nav{
+	position: absolute;
+	top: 0;
+}
+
+.logo img {
+	width: 250px;
+	height: 60px;
+}
+
+.telephon_numbers {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	column-gap: 14px;
+}
+
+.telephon_numbers span {
+	font-size: 16px;
+	line-height: 23px;
+	color: #77878B;
+}
+
+.nav_list {
+	width: 691px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	column-gap: 38px;
+}
+
+.nav_list li a{
+	font-size: 18px;
+	line-height: 26px;
+	color: #77878B;
+	text-decoration: none;
+}
+
+.nav_list li {
+	font-size: 18px;
+	line-height: 26px;
+	color: #77878B;
+}
+
+.header_icons {
+	width: 131px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	column-gap: 18px;
+	padding-bottom: 2px;
+}
+
+.prof {
+	padding-bottom: 2px;
+}
+
+.second_level {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-center;
+	align-items: flex-end;
+	column-gap: 22px;
+	padding-bottom: 7px;
+}
+
+.nav__bar {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	row-gap: 10px;
+}
+
+.header_wrapper {
+	/* width: 1304px; */
+	/* margin-left: 64px; */
+	margin-top: 26px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	column-gap: 201px;
+	align-items: flex-end;
+}
+
+.hamburger__menu {
+	display: none;
+}
+
+@media screen and (max-width: 1190px){
+	.header_wrapper {
+		column-gap: 15px;
+	}
+
+	.second_level {
+		column-gap: 22px;
+	}
+
+	.nav_list {
+		width: 600px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		column-gap: 5px;
+	}
+
+	.header_icons {
+		width: 101px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+		column-gap: 8px;
+	}
+}
+
+@media screen and (max-width: 1140px){
+	.nav__bar {
+		display: none;
+	}
+
+	.header_wrapper {
+		max-width: 1140px;
+		display: flex;
+    	flex-wrap: wrap;
+    	justify-content: space-between;
+	}
+
+	.hamburger__menu {
+		display: block;
+		/* height: 77px; */
+	}
+
+	.hamburger__menu img {
+		width: 60px;
+		height: 60px;
+		padding-bottom: 10px; 
+	}
+}
