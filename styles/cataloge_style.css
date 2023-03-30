@@ -16,7 +16,7 @@ body * {
 
 .input__form {
 	margin-top: 40px;
-	margin-left: 358px; 
+	/* margin-left: 358px;  */
 	width: 754px;
 	height: 54px;
 	background: #FCFCFC;
@@ -439,9 +439,6 @@ h1 {
 		padding-right: 35px;
 	}
 	
-	.filter__by {
-		/* column-gap: 5px; */
-	}
 	
 	.filter__by span {
 		font-size: 13px;
@@ -470,10 +467,6 @@ h1 {
 		height: 30px;
 		font-size: 13px;
 		line-height: 16px;
-	}
-	
-	.price__filter {
-		/* column-gap: 20px; */
 	}
 	
 	.price__filter span {
