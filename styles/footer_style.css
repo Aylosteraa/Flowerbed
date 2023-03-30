@@ -10,19 +10,18 @@
 	display: flex;
 	align-items: space-between;
 	align-items: flex-start;
-	/* column-gap: 134px; */
+	column-gap: 145px;
 }
 
-.footer__inform {
+/* .footer__inform { */
 	/* width: 944px; */
-    padding-top: 71px;
-	display: flex;
-	flex-direction: row;
-	align-items: space-between;
-	align-items: flex-start;
+    /* padding-top: 71px; */
+	/* display: flex; */
+	/* flex-direction: row; */
+	/* align-items: space-between; */
+	/* align-items: flex-start; */
 	/* column-gap: 160px;  */
-	
-}
+/* } */
 
 .footer p {
 	font-size: 16px;
@@ -48,6 +47,7 @@
 }
 
 .client{
+	padding-top: 71px;
 	width: 189px;
 	display: flex;
 	flex-direction: column;
@@ -70,10 +70,12 @@
 }
 
 .contacts {
+	padding-top: 71px;
 	width: 190px;
 }
 
 .continue {
+	padding-top: 71px;
 	width: 245px;
 }
 
@@ -135,8 +137,170 @@
 	.footer__wrapper{
 		column-gap: 50px;
 	}
+}
 
-	.footer__inform {
-		column-gap: 50px; 
+@media screen and (max-width: 960px) {
+	.footer__wrapper{
+		display: grid;
+		grid-template-columns: 245px 245px;
+		column-gap: none;
+	}
+
+	.addition {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+
+	.payment {
+		margin-bottom: 25px;
+	}
+
+	.social {
+		margin-bottom: 54px;
+	}
+	
+}
+
+@media screen and (max-width: 720px) {
+	.footer__wrapper{
+		display: grid;
+		grid-template-columns: 245px 245px;
+		column-gap: 10px;
+	}
+
+	.addition {
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+
+	.payment {
+		margin-bottom: 25px;
+	}
+
+	.social {
+		margin-bottom: 54px;
+	}
+	
+}
+
+@media screen and (max-width: 540px) {
+	.footer__wrapper{
+		padding-top: 25px;
+		display: grid;
+		grid-template-columns: 126px 153px;
+		column-gap: 10px;
+		padding-bottom: 49px;
+	}
+	
+	.footer p {
+		font-size: 11px;
+		line-height: 13px;
+	}
+	
+	.footer_logo {
+		display: none;
+	}
+
+	.social {
+		margin-bottom: 0;
+	}
+
+	.social__icons img {
+		width: 25px;
+		height: 25px;
+	}
+
+	.client a {
+		font-size: 11px;
+		line-height: 13px;
+	}
+	
+	.client{
+		padding-top: 0;
+		width: 126px;
+		row-gap: 5px;
+	}
+	
+	.group {
+		column-gap: 6px;
+	}
+	
+	.brand__group {
+		margin-top: 8px;
+	}
+	
+	.contacts {
+		width: 119px;
+	}
+	
+	.continue {
+		width: 153px;
+	}
+	
+	.contacts, .continue {
+		padding-top: 43px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.group img {
+		width: 15px;
+		height: 15px;
+	}
+	
+	.tele {
+		margin-top: 7px;
+	}
+	
+	.email {
+		margin-top: 4px;
+	}
+	
+	.time {
+		margin-top: 3px;
+	}
+	
+	.location {
+		width: 153px;
+	}
+	
+	.social {
+		margin-top: 23px;
+		row-gap: 2px;
+	}
+	
+	.social__icons {
+		column-gap: 11px;
+	}
+	
+	.addition {
+		padding-top: 0;
+		grid-column-start: 2;
+		grid-column-end: 3;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		padding-left: 35px;
+	}
+	
+	.payment {
+		width: 119px;
+		column-gap: 12px;
+		margin-top: 16px;
+		margin-bottom: 0;
+	}
+
+	.master {
+		width: 37px;
+		height: 30px;
+	}
+
+	.visa {
+		width: 68px;
+		height: 45px;
 	}
 }

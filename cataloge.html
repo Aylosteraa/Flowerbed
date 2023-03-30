@@ -17,7 +17,7 @@
 <body>
 
 	<!-- Header part starts -->
-	<header class="header__nav">
+	<header class="container header__nav">
 		<div class="header_wrapper">
 			<div class="logo">
 				<a href="/">
@@ -25,7 +25,12 @@
 				</a>
 			</div>
 			
+			<div class="hamburger__menu">
+				<img src="./image/icons/hamburger.svg" alt="ham">
+			</div>
+
 			<div class="nav__bar">
+				
 				<div class="telephon_numbers">
 					<img src="./image/icons/telephone.svg" alt="telephone">
 					<span>+ 38 067 056 53 45</span>
@@ -63,29 +68,31 @@
 	<!-- Header part ends -->
 
 	<!-- Search part starts -->
-
-	<div class="input__form">
-		<input class="input__field" type="text" placeholder="Пошук">
-		<div class="search__icon">
-			<img src="./image/icons/search-interface-symbol.svg" alt="Search">
+	<div class="move">
+		<div class="input__form">
+			<input class="input__field" type="text" placeholder="Пошук">
+			<div class="search__icon">
+				<img src="./image/icons/search-interface-symbol.svg" alt="Search">
+			</div>
 		</div>
-		
 	</div>
 
 	<!-- Search part ends -->
 
 	<!-- Title part starts -->
+
+	
 	<div class="cataloge__title">
 		<h1>Каталог</h1>
 		<img src="./image/svg/catalogeLine.svg" alt="Line">
 	</div>
 	<!-- Title part ends -->
 
-	<div class="filter">
+	<div class="container filter">
 		<div class="filter__by">
 		<span>Сортувати за</span>
 			<select class="select__filter">
-				<option value="">Оберіть сортування</option>
+				<option class="sort__option">Cортування</option>
 				<option value="За популярністю">За популярністю</option>
 				<option value="За зростанням цін">За зростанням цін</option>
 				<option value="За спаданням цін">За спаданням цін</option>
@@ -241,7 +248,7 @@
 				<div  class="product_image">
 					<div class="stickers"></div>
 					<a href="#" class="image">
-						<img src="/image/jpg/2956.jpg" alt="Product-1">
+						<img src="/image/jpg/1170.jpg" alt="Product-1">
 					</a>
 				</div>
 				
@@ -698,10 +705,9 @@
 
 	<p class="more">Показати більше</p>
 
-	<section class="footer">
+	<section class="container footer">
 		
 		<div class="footer__wrapper">
-			<div class="footer__inform">
 				<div class="client">
 					<p class="main__text">Клієнтам</p>
 					<a href="#">Про нас</a>
@@ -710,7 +716,6 @@
 					<a href="#">Оплата та доставка</a>
 					<a href="#">Контактна інформація</a>
 				</div>
-		
 				<div class="contacts">
 					<p class="main__text">Контактна інформація</p>
 					<div class="group tele">
@@ -755,10 +760,9 @@
 						</div>
 					</div>
 				</div>
-			</div>
 			
 			<div class="addition">
-				<img src="./image/svg/footer-logo.svg" alt="Logo">
+				<img class="footer_logo" src="./image/svg/footer-logo.svg" alt="Logo">
 				<div class="brand__group">
 					<img src="./image/icons/brand.svg" alt="Brand">
 					<div class="block">
@@ -768,8 +772,8 @@
 					</div>
 				</div>
 				<div class="payment">
-					<img src="./image/icons/Mastercard-logo.svg" alt="Mastercard">
-					<img src="./image/icons/Visa-Logo.svg" alt="Visa">
+					<img class="master" src="./image/icons/Mastercard-logo.svg" alt="Mastercard">
+					<img class="visa" src="./image/icons/Visa-Logo.svg" alt="Visa">
 				</div>
 			</div>
 		</div>

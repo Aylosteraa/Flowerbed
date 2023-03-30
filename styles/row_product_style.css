@@ -1,8 +1,9 @@
 /* Bestseller part starts */
 
 .product__line{
+	width: 1335px;
 	margin-left: 53px;
-	margin-right: 130px;
+	/* margin-right: 130px; */
 	margin-top: 76px;
 	display: flex;
 	flex-direction: row;
@@ -157,7 +158,7 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	row-gap: 11px;
+	row-gap: 10px;
 	padding: 19px 29px 18px 26px ;
 }
 
@@ -176,14 +177,155 @@ h2 {
 	column-gap: 25px;
 }
 
-@media screen and (max-width: 1190px) {
-	#product-4 {
-		display: none;
-	}
+.scroll {
+	display: none;
 }
 
 @media screen and (max-width: 1140px) {
+	#product-4 {
+		display: none;
+	}
+
+	.product__line{
+		width: 1005px;
+	}
+}
+
+@media screen and (max-width: 960px) {
 	#product-3 {
 		display: none;
+	}
+
+	.product__line{
+		width: 675px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	#product-2 {
+		display: none;
+	}
+
+	.product__line{
+		width: 345px;
+	}
+}
+
+@media screen and (max-width: 540px){
+
+	#product-2 {
+		display: block;
+	}
+
+	.category__title img {
+		width: 106px;
+	}
+
+	.arrow__prev{
+		display: none;
+	}
+
+	.arrow__next{
+		display: none;
+	}
+
+	.product__line{
+		width: 290px;
+		padding-left: 0;
+		margin-top: 22px;
+		display: flex;
+		flex-direction: column;
+		align-items:center;
+		column-gap: 13px;
+	}
+	
+	h2 {
+		font-size: 14px;
+		line-height: 17px;
+		color: #2F3537;
+	}
+	
+	.scroll{
+		display: block;
+	}
+
+	.wrapper {
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+
+	.category__title {
+		row-gap: 2px;
+		margin-bottom: 6px;
+	}
+	
+	.product_image{
+		width: 105px;
+		height: 105px;
+	}
+	
+	.image {
+		width: 105px;
+		height: 105px;
+		border-radius: 25px;
+	}
+	
+	.image img {
+		width: 105px;
+		height: 105px;
+	}
+	
+	.discount, .new {
+		width: 52px;
+		height: 15px;
+		font-size: 9px;
+		line-height: 11px;
+		color: #FFFFFF;
+	}
+	
+	.stickers {
+		width: 105px;
+	}
+	
+	.title {
+		font-size: 11px;
+		line-height: 13px;
+	}
+	
+	.btn__card {
+		width: 113px;
+		height: 27px;
+		font-size: 12px;
+		line-height: 14px;
+	}
+	
+	.new__price, .old__price {
+		font-size: 13px;
+		line-height: 16px;
+	}
+	
+	.price {
+		column-gap: 7px;
+	}
+	
+	.product {
+		width: 135px;
+		height: 195px;
+		border-radius: 25px;
+	}
+
+	.product__container {
+		row-gap: 11px;
+		padding: 9px 10px 9px 10px ;
+	}
+	
+	.product__info {
+		width: 113px;
+		height: 63px;
+		row-gap: 3px;
+	}
+	
+	.product__row {
+		column-gap: 20px;
 	}
 }
